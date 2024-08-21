@@ -21,3 +21,9 @@
   font-weight: 700;
   font-style: italic;
 }
+
+h1 {
+    font-family: 'PT Serif', serif; /* Apply PT Serif font */
+    font-size: 3rem; /* Example of customizing font size */
+    color: #333333; /* Example of changing text color */
+}
