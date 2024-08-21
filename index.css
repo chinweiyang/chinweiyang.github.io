@@ -22,9 +22,7 @@
   font-style: italic;
 }
 
-h1 {
-  font-family: "Roboto Slab", serif;
-  font-optical-sizing: auto;
-  font-weight: <400>;
-  font-style: normal;
+.roboto-slab-light {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 300; /* Light weight */
 }
