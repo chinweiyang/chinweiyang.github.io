@@ -26,3 +26,8 @@
     font-family: 'Roboto Slab', serif;
     font-weight: 300; /* Light weight */
 }
+
+/* index.css */
+.tealblue {
+  color: rgb(54, 117, 135);
+}
