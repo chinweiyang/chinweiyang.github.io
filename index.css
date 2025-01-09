@@ -29,5 +29,5 @@
 
 /* index.css */
 .tealblue {
-  color: rgb(54, 117, 135);
+  color: rgb(54, 117, 135) !important;
 }
