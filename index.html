@@ -1,178 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Chin-Wei Yang | About" />
-    <title>Chin-Wei Yang | About</title>
-    <style>
-      /* Embedded styles for self-contained design */
-      :root {
-        --main-text-color: #404040;
-        --border-color: black;
-      }
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="Chin-Wei Yang | About" />
+		<title>Chin-Wei Yang | About</title>
+		<link rel="icon" href="./public/icon/letter-y.ico" type="image/x-icon" />
+		<script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="index.css" />
+	</head>
+	<body class="[&_*]:text-[#404040] bg-white h-dvh overflow-y-auto">
+		<div class="container max-w-[900px] mx-auto">
+			<h1
+			    class="text-center text-3xl md:text-5xl py-6 md:py-16 roboto-slab-light">
+			    Chin-Wei Yang
+			</h1>
 
-      body {
-        font-family: 'Roboto Slab', serif;
-        background-color: white;
-        color: var(--main-text-color);
-        margin: 0;
-        padding: 0;
-        height: 100vh;
-        overflow-y: auto;
-      }
+			<nav
+				class="md:pr-[1.5dvw] pr-4 md:max-w-[60dvw] mx-auto border-y-2 border-y-black flex justify-between items-center">
+				<ul
+					class="flex justify-center items-center md:text-base text-sm [&_li]:px-4 [&_li]:py-2 [&_li]:border-r-2 [&_li]:border-r-black">
+					<li class="hover:bg-gray-100 transition-all">
+						<a href="./index.html">About</a>
+					</li>
+					<li class="hover:bg-gray-100 transition-all">
+						<a href="./research.html">Research</a>
+					</li>
+					<li class="hover:bg-gray-100 transition-all">
+						<a href="./cv.html">CV</a>
+					</li>
+				</ul>
+				<div class="flex justify-center items-center gap-4">
+					<a
+						class="block w-fit transition-all hover:scale-110 duration-300 rounded-full brightness-0"
+						href="mailto:r12323019@ntu.edu.tw"
+						><img
+							src="./public/icon/envelope-solid.svg"
+							width="16"
+							height="16"
+							alt="email"
+					/></a>
+					<a
+						class="block w-fit transition-all hover:scale-110 duration-300 rounded-full brightness-0"
+						href="https://scholar.google.com.tw/citations?user=u8apUaMAAAAJ&hl=zh-TW"
+						target="_blank"
+						><img
+							src="./public/icon/graduation-cap-solid.svg"
+							width="16"
+							height="16"
+							alt="scholar.google"
+					/></a>
+					<a
+						class="block w-fit transition-all hover:scale-110 duration-300 rounded-full brightness-0"
+						href="https://x.com/chinwei_yang"
+						target="_blank"
+						><img
+							src="./public/icon/twitter.svg"
+							width="16"
+							height="16"
+							alt="twitter"
+					/></a>
+				</div>
+			</nav>
+			<div class="p-8 md:p-[2dvw] max-w-full md:max-w-[60dvw] mx-auto">
+				<div class="p-8 md:p-[2dvw] max-w-full md:max-w-[60dvw] mx-auto mt-[-1.5dvw] ml-[-1dvw]">
+					    <div class="flex lg:flex-row flex-col gap-[5dvw] items-start justify-center w-full">
+					        <div class="flex-1">
+					            <h2 class="text-3xl mb-2">Welcome!</h2>
+						    <br />
+					            <p class="prose max-w-full">
+					                I am a Master’s student at the Department of Economics, National
+					                Taiwan University. My research interests lie in household finance, public economics, and labor economics, with a focus on the economic well-being of families.
+					            </p>
+						    <br />
+					            <p class="prose max-w-full">
+					                Feel free to contact me at <a href="mailto:r12323019@ntu.edu.tw">r12323019@ntu.edu.tw</a>.
+					            </p>
+					        </div>
+					        <div class="flex-1 relative md:scale-100 scale-75">
+					            <div class="border-2 border-black w-full h-full absolute top-0.5 left-14 scale-x-90 z-0"></div>
+					            <img src="./public/img/profile.webp" width="500" class="w-full relative scale-90 z-10" alt="" />
+					        </div>
+					    </div>
+					</div>
 
-      h1,
-      h2 {
-        font-family: 'Roboto Slab', serif;
-        font-weight: 300;
-      }
 
-      h1 {
-        text-align: center;
-        font-size: 2rem;
-        margin: 1rem 0;
-      }
-
-      nav {
-        border-top: 2px solid var(--border-color);
-        border-bottom: 2px solid var(--border-color);
-        display: flex;
-        justify-content: space-between;
-        padding: 0.5rem 1rem;
-        align-items: center;
-      }
-
-      nav ul {
-        display: flex;
-        list-style: none;
-        margin: 0;
-        padding: 0;
-      }
-
-      nav li {
-        border-right: 2px solid var(--border-color);
-        padding: 0.5rem 1rem;
-      }
-
-      nav li:last-child {
-        border-right: none;
-      }
-
-      nav a {
-        text-decoration: none;
-        color: var(--main-text-color);
-      }
-
-      nav a:hover {
-        background-color: #f0f0f0;
-        transition: 0.3s;
-      }
-
-      .container {
-        max-width: 900px;
-        margin: auto;
-        padding: 1rem;
-      }
-
-      .content {
-        display: flex;
-        flex-direction: column;
-        gap: 2rem;
-        margin-top: 2rem;
-      }
-
-      .flex-row {
-        display: flex;
-        flex-direction: row;
-        gap: 2rem;
-        justify-content: space-between;
-      }
-
-      .flex-1 {
-        flex: 1;
-      }
-
-      .image-wrapper {
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-
-      .image-wrapper::before {
-        content: '';
-        position: absolute;
-        top: 0.5rem;
-        left: 0.5rem;
-        width: calc(100% - 0.5rem);
-        height: calc(100% - 0.5rem);
-        border: 2px solid var(--border-color);
-        z-index: 0;
-      }
-
-      .image-wrapper img {
-        position: relative;
-        z-index: 1;
-        max-width: 100%;
-        height: auto;
-      }
-
-      .contact {
-        display: flex;
-        gap: 1rem;
-        justify-content: center;
-        margin-top: 1rem;
-      }
-
-      .contact img {
-        width: 24px;
-        height: 24px;
-        filter: brightness(0);
-        transition: transform 0.3s;
-      }
-
-      .contact a:hover img {
-        transform: scale(1.1);
-      }
-    </style>
-  </head>
-  <body>
-    <div class="container">
-      <h1>Chin-Wei Yang</h1>
-
-      <nav>
-        <ul>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Research</a></li>
-          <li><a href="#">CV</a></li>
-        </ul>
-        <div class="contact">
-          <a href="mailto:r12323019@ntu.edu.tw"><img src="data:image/svg+xml;base64,..." alt="Email" /></a>
-          <a href="#"><img src="data:image/svg+xml;base64,..." alt="Scholar" /></a>
-          <a href="#"><img src="data:image/svg+xml;base64,..." alt="Twitter" /></a>
-        </div>
-      </nav>
-
-      <div class="content">
-        <div class="flex-row">
-          <div class="flex-1">
-            <h2>Welcome!</h2>
-            <p>
-              I am a Master’s student at the Department of Economics, National Taiwan
-              University. My research interests lie in household finance, public
-              economics, and labor economics, with a focus on the economic well-being of families.
-            </p>
-            <p>
-              Feel free to contact me at
-              <a href="mailto:r12323019@ntu.edu.tw">r12323019@ntu.edu.tw</a>.
-            </p>
-          </div>
-          <div class="flex-1 image-wrapper">
-            <img src="data:image/png;base64,..." alt="Profile Image" />
-          </div>
-        </div>
-      </div>
-    </div>
-  </body>
+				</div>
+			</div>
+		</div>
+	</body>
 </html>
