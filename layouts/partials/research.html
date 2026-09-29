@@ -1,0 +1,11 @@
+{{ $research := site.GetPage "/research" }}
+<section id="research" class="content-section" aria-label="Research">
+  {{ with $research.Params.working_papers }}
+  <h2 class="group-title">Working Papers</h2>
+  {{ range . }}{{ partial "paper.html" . }}{{ end }}
+  {{ end }}
+  {{ with $research.Params.work_in_progress }}
+  <h2 class="group-title">Work in Progress</h2>
+  {{ range . }}{{ partial "paper.html" . }}{{ end }}
+  {{ end }}
+</section>

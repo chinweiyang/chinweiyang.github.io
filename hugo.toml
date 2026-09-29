@@ -1,0 +1,22 @@
+publishDir = '.build/site'
+baseURL = 'https://chinweiyang.github.io/'
+languageCode = 'en-us'
+title = 'Chin-Wei Yang'
+disableKinds = ['taxonomy', 'term', 'RSS']
+enableRobotsTXT = true
+
+[params]
+  description = 'Chin-Wei Yang is a PhD student in Economics at Washington University in St. Louis, studying household finance, labor economics, and public economics.'
+  email = 'chin-wei@wustl.edu'
+  portrait = 'images/chin-wei-yang.jpg'
+  cv = 'cv/cwyang_CV.pdf'
+  scholar = 'https://scholar.google.com.tw/citations?user=u8apUaMAAAAJ&hl=en'
+  twitter = 'https://x.com/chinwei_yang'
+
+[[module.mounts]]
+  source = 'static'
+  target = 'static'
+[[module.mounts]]
+  source = 'cv'
+  target = 'static/cv'
+  includeFiles = ['cwyang_CV.pdf']

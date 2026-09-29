@@ -1,0 +1,6 @@
+<article class="paper">
+  <h3>{{ with .url }}<a href="{{ . }}">{{ end }}{{ .title }}{{ if .url }}</a>{{ end }}</h3>
+  {{ with .authors }}<p class="authors">with {{ range $i, $author := . }}{{ if $i }} and {{ end }}<a href="{{ .url }}">{{ .name }}</a>{{ end }}</p>{{ end }}
+  {{ with .url }}<a class="paper-link" href="{{ . }}">{{ if strings.Contains . "ssrn.com" }}Paper on SSRN{{ else }}Paper{{ end }} <span aria-hidden="true">↗</span></a>{{ end }}
+  {{ with .abstract }}<details><summary>Abstract</summary><p>{{ . }}</p></details>{{ end }}
+</article>

@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="{{ site.Language.LanguageCode }}">
+<head>
+  <meta charset="utf-8">
+  <link rel="icon" href="{{ "favicon.ico?v=2" | relURL }}" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ "favicon.png?v=2" | relURL }}">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ .Title }} | {{ site.Title }}{{ end }}</title>
+  <meta name="description" content="{{ site.Params.description }}">
+  <link rel="canonical" href="{{ .Permalink }}">
+  <meta property="og:title" content="{{ site.Title }}">
+  <meta property="og:description" content="{{ site.Params.description }}">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="{{ site.Params.portrait | absURL }}">
+  {{ $style := resources.Get "css/style.css" | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $style.RelPermalink }}">
+  {{ $script := resources.Get "js/site.js" | minify | fingerprint }}
+  <script src="{{ $script.RelPermalink }}" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  {{ partial "sidebar.html" . }}
+  <main id="main">{{ block "main" . }}{{ end }}</main>
+</body>
+</html>

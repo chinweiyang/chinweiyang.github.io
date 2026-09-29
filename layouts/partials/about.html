@@ -1,0 +1,6 @@
+<section id="about" class="about-section" aria-label="About Chin-Wei Yang">
+  <div class="about-content">
+    <div class="biography">{{ with site.GetPage "/about" }}{{ .Content }}{{ end }}</div>
+  </div>
+  <img class="about-portrait" src="{{ site.Params.portrait | relURL }}" alt="Chin-Wei Yang" width="1280" height="2006">
+</section>

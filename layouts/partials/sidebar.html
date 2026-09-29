@@ -1,0 +1,17 @@
+{{ $about := or .IsHome (eq .Section "about") }}
+<aside class="sidebar">
+  <a class="profile-name" href="{{ site.Home.RelPermalink }}">Chin-Wei Yang</a>
+  <p class="affiliation">PhD student in Economics<br><span>Washington University in St. Louis</span></p>
+  <button class="menu-toggle" type="button" aria-controls="navigation" aria-expanded="false">Menu <span aria-hidden="true">☰</span></button>
+  <nav id="navigation" aria-label="Main navigation">
+    <a href="{{ site.Home.RelPermalink }}" {{ if $about }}aria-current="page"{{ end }}>About</a>
+    <a href="{{ "research/" | relURL }}" {{ if eq .Section "research" }}aria-current="page"{{ end }}>Research</a>
+    <a href="{{ "teaching/" | relURL }}" {{ if eq .Section "teaching" }}aria-current="page"{{ end }}>Teaching</a>
+    <a href="{{ "cv/" | relURL }}" {{ if eq .Section "cv" }}aria-current="page"{{ end }}>Curriculum Vitae</a>
+  </nav>
+  <div class="profile-links">
+    <a href="mailto:{{ site.Params.email }}">Email</a>
+    <a href="{{ site.Params.scholar }}">Google Scholar</a>
+    <a href="{{ site.Params.twitter }}">X / Twitter</a>
+  </div>
+</aside>
