@@ -2,5 +2,7 @@
   <div class="about-content">
     <div class="biography">{{ with site.GetPage "/about" }}{{ .Content }}{{ end }}</div>
   </div>
-  <img class="about-portrait" src="{{ site.Params.portrait | relURL }}" alt="Chin-Wei Yang" width="1280" height="2006">
+  <div class="portrait-frame">
+    <img class="about-portrait" src="{{ site.Params.portrait | relURL }}" alt="Chin-Wei Yang" width="1280" height="2006">
+  </div>
 </section>

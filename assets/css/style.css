@@ -7,3 +7,9 @@
 
 .teaching{padding-top:clamp(2rem,5vh,4rem)}
 @media(max-width:850px){.teaching{padding-top:1rem}}
+
+/* Offset frame follows the portrait at every screen size. */
+.portrait-frame{position:relative;isolation:isolate;width:100%;max-width:18rem;justify-self:center}
+.portrait-frame::before{content:"";position:absolute;inset:0;border:2px solid #000;transform:translate(16px,16px);z-index:-1;pointer-events:none}
+.portrait-frame .about-portrait{width:100%;max-width:none;border-radius:0}
+@media(max-width:540px){.portrait-frame{width:65%;max-width:16rem;margin-bottom:16px}}
