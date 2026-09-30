@@ -6,6 +6,7 @@ disableKinds = ['taxonomy', 'term', 'RSS']
 enableRobotsTXT = true
 
 [params]
+  googleAnalytics = 'G-60PD4JZGBM'
   description = 'Chin-Wei Yang is a PhD student in Economics at Washington University in St. Louis, studying household finance, labor economics, and public economics.'
   email = 'chin-wei@wustl.edu'
   portrait = 'images/chin-wei-yang.jpg'
