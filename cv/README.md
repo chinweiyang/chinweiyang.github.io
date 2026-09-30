@@ -1,11 +1,9 @@
 # CV
 
-Edit `cwyang_CV.tex`. Keep `1.5column.sty` and `Fonts/` alongside it.
+Edit `cwyang_CV.tex`; keep `1.5column.sty` alongside it. The fonts are installed locally in macOS Font Book (`~/Library/Fonts`), not in this repository: Sabon LT Std, Adobe Caslon Pro, and Calluna.
 
-In VS Code, open the website project folder, then build with LaTeX Workshop's **latexmk** recipe. Saving also triggers compilation. The result is `cwyang_CV.pdf` in this folder. The website serves that exact PDF automatically; no copying is needed.
+Build using the normal LaTeX Workshop **latexmk** recipe, or run `bash cv/build.sh` from the website root. The local `.latexmkrc` selects XeLaTeX for the installed fonts.
 
-You can also run `bash cv/build.sh` from the project root, or `latexmk cwyang_CV.tex` from this folder.
+The website displays `cv/cwyang_CV.pdf` directly. After editing, compile locally, then commit and push both the source changes and the updated PDF. GitHub publishes the PDF without compiling the CV.
 
-Commit and push the source to `main`; GitHub Actions recompiles it and publishes the site. Only the PDF is included on the website, not the fonts or TeX source.
-
-The local `.latexmkrc` automatically selects the engine required by the bundled fonts, including when the standard recipe passes `-pdf`.
+A different computer needs these fonts installed before it can compile the CV.

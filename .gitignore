@@ -12,4 +12,7 @@
 /cv/*.fdb_latexmk
 /cv/*.synctex.gz
 /cv/*.xdv
-/cv/cwyang_CV.pdf
+
+/cv/Fonts/
+/cv/missfont.log
+/cv/mfput.log

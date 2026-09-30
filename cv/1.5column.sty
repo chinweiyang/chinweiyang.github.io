@@ -14,27 +14,19 @@
 \usepackage{fontawesome5}
 % Font style
 \usepackage{fontspec}
-\setmainfont{SabonLTStd}[
-    Path=./Fonts/Sabon/,
-    Extension = .ttf,
-    UprightFont=*-Regular,
-    BoldFont=*-Bold,
-    ItalicFont=*-Italic,
-    BoldItalicFont=*-BoldItalic
+% Resolve fonts installed in macOS Font Book, without project font files.
+\setmainfont{SabonLTStd-Roman}[
+    BoldFont=SabonLTStd-Bold,
+    ItalicFont=SabonLTStd-Italic,
+    BoldItalicFont=SabonLTStd-BoldItalic
+    ]
+\newfontfamily\Calluna{Calluna-Regular}
+\newfontfamily\Adobe{ACaslonPro-Regular}[
+    BoldFont=ACaslonPro-Bold,
+    ItalicFont=ACaslonPro-Italic,
+    BoldItalicFont=ACaslonPro-BoldItalic
     ]
 
-\newfontfamily\Calluna{Calluna}[
-    Path=./Fonts/Calluna/,
-    Extension = .otf,
-    UprightFont=*-Regular
-    ]
-\newfontfamily\Adobe{ACaslonPro}[
-    Path=./Fonts/Adobe Caslon Pro/,
-    UprightFont=*-Regular,
-    BoldFont=*-Bold,
-    ItalicFont=*-Italic,
-    BoldItalicFont=*-BoldItalic
-    ]
 % Itemize Setting
 \def\labelitemi{-} 
 \setlist[itemize, 1]{itemsep=0pt, topsep=0pt, parsep=0pt, partopsep=0pt}

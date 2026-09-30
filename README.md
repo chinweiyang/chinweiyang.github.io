@@ -2,12 +2,12 @@
 
 ## Your files
 
-- **CV source:** `cv/cwyang_CV.tex`, with `cv/1.5column.sty` and `cv/Fonts/`.
+- **CV source:** `cv/cwyang_CV.tex`, with `cv/1.5column.sty`; the fonts are installed locally in Font Book.
 - **Photo:** `static/images/chin-wei-yang.jpg`.
 - **Paper PDFs:** `static/papers/`.
 - **Published CV PDF:** `cv/cwyang_CV.pdf`, generated from the CV source.
 
-Edit the CV and run `bash cv/build.sh` to update its PDF locally. Commit and push to `main` to have GitHub Actions compile and deploy it. GitHub Pages must use GitHub Actions as its source.
+Edit the CV and run `bash cv/build.sh` to update its PDF locally. Compile locally, then commit and push the source and updated `cv/cwyang_CV.pdf` to `main`. GitHub Actions publishes the PDF without recompiling it. GitHub Pages must use GitHub Actions as its source.
 
 ## Website text and design
 
