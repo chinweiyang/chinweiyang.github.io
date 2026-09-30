@@ -30,10 +30,6 @@ hugo server --renderToMemory
 
 Visit http://localhost:1313/. To build for publishing, run `hugo --minify`.
 
-## Design references
-
-Built with Hugo using an original layout inspired by Hyun Soo Suh and Nina Roussille, and the content organization of Stefanie Stantcheva’s Hugo site. Content was migrated from chinweiyang.com.
-
 ## Add a working paper
 
 1. Put its PDF in `static/papers/`, for example `new-paper.pdf`.
